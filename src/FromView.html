@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="resource/style.css">
+    <title>FormView</title>
+</head>
+<body>
+    <main>
+        <form id="form">
+            <div class="input">
+                <label for="txtName"><b>Nombre</b></label>
+                <input id="txtName" type="text" placeholder="Enter name" name="txtName">
+                <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                <img src="./resource/icons/x-red.png" width="1%" hidden>
+            </div>
+            <div class="input">
+                <label for="txtLastName"><b>Apellidos</b></label>
+                <input id="txtLastName" type="text" placeholder="Enter Lastname" name="txtLastName">
+                <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                <img src="./resource/icons/x-red.png" width="1%" hidden>
+            </div>
+            <div class="input">
+                <label for="txtEmail"><b>Email</b></label>
+                <input id="txtEmail" type="text" placeholder="Enter Email" name="txtEmail">
+                <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                <img src="./resource/icons/x-red.png" width="1%" hidden>
+            </div>
+            <div>
+                <input type="radio" name="radCountry" value="usa" > USA
+                <input type="radio" name="radCountry" value="es"> España
+            </div>
+            <div id="SecondPart" hidden>
+                <div class="input">
+                   <label for="txtAddress"><b>Dirección</b></label>
+                   <input id="txtAddress" type="text" placeholder="Enter Address" name="txtAddress">
+                   <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                   <img src="./resource/icons/x-red.png" width="1%" hidden>
+                </div>
+                <div class="input">
+                   <label for="txtZipCode"><b>Código Postal</b></label>
+                   <input id="txtZipCode" type="text" placeholder="Enter Zip Code" name="txtZipCode">
+                   <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                   <img src="./resource/icons/x-red.png" width="1%" hidden>
+                </div>
+                <div class="input">
+                   <label for="txtLandLine"><b>Telefono fijo</b></label>
+                   <input id="txtLandLine" type="text" placeholder="Enter Land line" name="txtLandLine">
+                   <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                   <img src="./resource/icons/x-red.png" width="1%" hidden>
+                </div>
+                <div class="input">
+                    <label for="txtMobilePhone"><b>Movil</b></label>
+                    <input id="txtMobilePhone" type="text" placeholder="Enter Mobile Phone" name="txtMobilePhone">
+                    <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                    <img src="./resource/icons/x-red.png" width="1%" hidden>
+                </div>
+                <div>
+                    <label for="txtDateBirth"><b>Fecha de Nacimiento</b></label>
+                    <input id="txtDateBirth" type="text" placeholder="Enter Date of Birth" name="txtDateBirth">
+                    <img src="./resource/icons/green-tick.png" width="1%" hidden> 
+                    <img src="./resource/icons/x-red.png" width="1%" hidden>
+                </div>
+                <input type="button" id="btnSend" value="Enviar" disabled>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="services/FormService.js"></script>
+<script src="views/FormView.js"></script>
+<script src="controllers/FormController.js"></script>
+<script src="app.js"></script>
+</html>
