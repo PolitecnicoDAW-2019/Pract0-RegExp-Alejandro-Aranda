@@ -16,8 +16,8 @@ class FormController{
     }
     
     handleValidateName = () =>{
-        let status=this.service.validatename(this.view.Dom.inputName.value);
-        this.ChangeStatus(this.view.Dom.inputName, status);
+        let status=this.service.validateName(this.view.Dom.txtName.value);
+        this.ChangeStatus(this.view.Dom.txtName, status);
     }
     handleValidateLastNames = ()=>{
         let status=this.service.validateLastName(this.view.Dom.txtLastName.value);

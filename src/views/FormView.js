@@ -2,7 +2,7 @@ class FormView{
     Dom={
         btnSend:document.getElementById('btnSend'),
         form:document.getElementById('form'),
-        inputName:document.getElementById('txtName'),
+        txtName:document.getElementById('txtName'),
         txtLastName:document.getElementById('txtLastName'),
         txtEmail:document.getElementById('txtEmail'),
         Countries:document.getElementsByName('radCountry'),
@@ -16,7 +16,7 @@ class FormView{
     };
    
     bindName = handler =>{ 
-         this.Dom.inputName.addEventListener('keyup',handler);
+         this.Dom.txtName.addEventListener('keyup',handler);
     };
 
     bindLastName = handler =>{

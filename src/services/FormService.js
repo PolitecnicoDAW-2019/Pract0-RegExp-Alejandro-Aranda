@@ -1,10 +1,10 @@
 class FormService{
 
-    validatename=(name)=>  /^[A-Za-z].{3,128}$/g.test(name);
+    validateName=(name)=>  /^[A-Za-z].{3,128}$/g.test(name);
 
     validateLastName=(lastname)=> /^[A-Za-z].{3,256}$/g.test(lastname);
 
-    validateEmail=(email)=> /^.{1,256}@.{2,256}\.[a-zA-Z]{2,25}$/g.test(email);
+    validateEmail=(email)=> /^.{2,256}@.{2,256}\.[a-zA-Z]{2,25}$/g.test(email);
 
     validateAddress=(address)=> /^.{5,256}$/.test(address);
 
