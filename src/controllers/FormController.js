@@ -56,11 +56,11 @@ class FormController{
     ChangeStatus(input, status){
         const greentick= input.nextElementSibling
         if(status){
-            greentick.hidden=false;
-            greentick.nextElementSibling.hidden=true;
+            greentick.style.display='block';
+            greentick.nextElementSibling.style.display='none';
         }else{
-            greentick.hidden=true;
-            greentick.nextElementSibling.hidden=false;
+            greentick.style.display='none';
+            greentick.nextElementSibling.style.display='block';
         }
     }
     

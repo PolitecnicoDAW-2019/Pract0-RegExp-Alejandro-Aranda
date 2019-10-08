@@ -49,7 +49,7 @@ class FormView{
         this.Dom.Countries.forEach(elem =>{
             elem.addEventListener('click',()=>{
                 this.Dom.CountrySelected=elem.value;
-                this.Dom.SecondPartForm.hidden=false;
+                this.Dom.SecondPartForm.style.display='block';
                 this.clearSecondPartInputsAndImg();
             });
         })
@@ -63,7 +63,7 @@ class FormView{
             }
         })
         Array.from( this.Dom.SecondPartForm.getElementsByTagName('img')).forEach(element =>{
-            element.hidden=true;
+            element.style.display='none';
         })
     }
 
@@ -71,7 +71,7 @@ class FormView{
         Array.from( this.Dom.form.getElementsByTagName('input')).forEach(element =>{
             element.addEventListener('keyup',()=>{
                 const TotalOfChecks = Array.from(this.Dom.form.getElementsByTagName('img')).reduce((accumulator,current)=>{
-                    return (current.src.includes('green-tick') && !current.hidden)?accumulator+1: accumulator;
+                    return (current.src.includes('green-tick') && current.style.display==='block')?accumulator+1: accumulator;
                 },0)
                 TotalOfChecks===8?this.Dom.btnSend.disabled=false:this.Dom.btnSend.disabled=true;
             })

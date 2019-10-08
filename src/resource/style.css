@@ -13,11 +13,11 @@
     outline: none;
   }
 
-  form{
-      display: inline-block;
-  }
-  body{
-    text-align: center;
+
+  img{
+	position: relative;
+	top: -30px;
+	left: 300px;
   }
 
   
